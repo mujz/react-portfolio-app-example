@@ -3,7 +3,7 @@ import Box from '@material-ui/core/Box'
 import Container from './components/Container';
 import Header from './components/Header';
 import Intro from './components/Intro';
-import Projects from './components/Projects';
+import Projects from './container/Projects';
 import Footer from './components/Footer';
 import {
   firstName,
@@ -26,7 +26,7 @@ function App() {
       <Container>
         <Header name={fullName} links={links} />
         <Intro name={firstName} aboutLinkHref={links[1].href} />
-        <Projects projects={projects} />
+        <Projects />
       </Container>
       <Footer links={socialLinks} />
     </Box>
