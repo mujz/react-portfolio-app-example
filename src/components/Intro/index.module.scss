@@ -1,0 +1,13 @@
+.container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .title {
+    margin-bottom: 16px;
+  }
+}

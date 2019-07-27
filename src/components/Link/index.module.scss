@@ -1,0 +1,8 @@
+.link {
+  &.link--no-underline-on-hoever {
+    &:hover {
+      text-decoration: none;
+      opacity: 0.6;
+    }
+  }
+}
