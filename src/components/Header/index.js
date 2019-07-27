@@ -1,16 +1,18 @@
 import React from 'react';
 import Links from '../Links';
-import styles from './index.module.scss';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
 function Header({ name, links }) {
   return (
-    <div className={styles.container}>
-      <Typography variant='body1'>{name}</Typography>
-      <div>
+    <Grid container justify="space-between">
+      <Grid item>
+        <Typography variant='body1'>{name}</Typography>
+      </Grid>
+      <Grid item>
         <Links links={links} />
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   )
 }
 

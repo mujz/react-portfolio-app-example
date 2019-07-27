@@ -1,4 +1,5 @@
 import React from 'react';
+import Box from '@material-ui/core/Box'
 import Container from './components/Container';
 import Header from './components/Header';
 import Intro from './components/Intro';
@@ -14,14 +15,21 @@ import {
 
 function App() {
   return (
-    <div>
+    <Box
+      display="flex"
+      flexDirection="column"
+      height="100%"
+      width="100%"
+      position="absolute"
+      justifyContent="space-between"
+    >
       <Container>
         <Header name={fullName} links={links} />
         <Intro name={firstName} aboutLinkHref={links[1].href} />
         <Projects projects={projects} />
       </Container>
       <Footer links={socialLinks} />
-    </div>
+    </Box>
   );
 }
 

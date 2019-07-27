@@ -1,14 +1,12 @@
 import React from 'react';
 import Links from '../Links';
-import styles from './index.module.scss';
+import Box from '@material-ui/core/Box';
 
 function Footer({ links }) {
   return (
-    <div className={styles.container}>
-      <div>
-        <Links links={links} />
-      </div>
-    </div>
+    <Box display="flex" justifyContent="center" marginBottom="16px">
+      <Links links={links} />
+    </Box>
   )
 }
 
