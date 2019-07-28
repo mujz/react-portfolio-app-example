@@ -9,8 +9,7 @@ import {
   firstName,
   fullName,
   links,
-  socialLinks,
-  projects
+  socialLinks
 } from './constants'
 
 function App() {

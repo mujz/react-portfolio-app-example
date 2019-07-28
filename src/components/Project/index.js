@@ -13,11 +13,13 @@ import styles from './index.module.scss';
 
 class Project extends React.Component {
   state = {
-    favoritesCount: 0,
+    favoritesCount: parseInt(this.props.favoritesCount),
   }
 
   favoriteProject = () => {
-    this.setState({ favoritesCount: this.state.favoritesCount + 1 });
+    const newValue = this.state.favoritesCount + 1;
+    this.setState({ favoritesCount: newValue });
+    this.props.updateFavoritesCount(this.props.resourceName, newValue);
   }
 
   render() {
